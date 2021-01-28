@@ -68,6 +68,7 @@ namespace Major_Project.Controllers
         }
 
         // GET: Customers/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -119,6 +120,7 @@ namespace Major_Project.Controllers
         }
 
         // GET: Customers/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

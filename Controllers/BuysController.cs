@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Major_Project.Data;
 using Major_Project.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Major_Project.Controllers
 {
+    [Authorize]
     public class BuysController : Controller
     {
         private readonly Major_ProjectContext _context;
